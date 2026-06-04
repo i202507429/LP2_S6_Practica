@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class ProyectoController {
 
 	@PostMapping("saludar")
-	public String saludar(@RequestParam String nombre, Model model) {
+	public String Saludar(@RequestParam String nombre, Model model) {
 		model.addAttribute("nombre", nombre);
 		return "saludo";
 	}
